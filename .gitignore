@@ -35,6 +35,7 @@ target/
 *.zip
 *.tar.gz
 *.rar
+*.gz
 
 # Misc file
 hs_err_pid*
