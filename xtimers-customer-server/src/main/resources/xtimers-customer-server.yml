@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+logging:
+  file: logs/xtimers-customer-server.log
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      path-mapping:
+        health: up
+      exposure:
+        include: "*"
+
+xtimers-customer:
+  db:
+    mysql:
+      url: jdbc:mysql://localhost:3306/xtimers-customer?serverTimezone=UTC
+      user: root
+      password:
+    liquibase:
+      enabled: true
+      drop-first: true
