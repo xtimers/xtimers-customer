@@ -80,7 +80,7 @@ public class XtimersCustomerPersistenceConfig {
         SpringLiquibase liquibase = new SpringLiquibase();
         // liquibase.setContexts(RuntimeMode.current().name());
         liquibase.setDataSource(dataSource);
-        logger.info("env.containsProperty(initdb):{}", env.containsProperty("initdb"));
+       // logger.info("env.containsProperty(initdb):{}", env.containsProperty("initdb"));
         if (env.containsProperty("initdb")) {
             liquibase.setDropFirst(true);
         }
