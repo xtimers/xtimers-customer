@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>xtimers-customer-api</artifactId>
-    <name>Xtimers-Customer :: API</name>
+    <name>Xtimers :: Customer :: API</name>
     <properties>
     </properties>
 

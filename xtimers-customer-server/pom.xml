@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>xtimers-customer-server</artifactId>
-    <name>Xtimers-Customer :: Server</name>
+    <name>Xtimers :: Customer :: Server</name>
     <properties>
         <start-class>com.xtimers.customer.server.XtimersCustomerServer</start-class>
         <classifier-name>exec</classifier-name>
