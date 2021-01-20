@@ -2,8 +2,9 @@ server:
   port: 8080
 
 logging:
-  file: logs/xtimers-customer-server.log
-
+  config: classpath:xtimers-customer-server-logback.xml
+  file:
+    name: logs/xtimers-customer-server.log
 management:
   endpoint:
     health:
