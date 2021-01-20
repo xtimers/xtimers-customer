@@ -1,6 +1,11 @@
 package com.xtimers.customer.server;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.PropertiesPropertySource;
@@ -8,9 +13,11 @@ import org.springframework.core.env.PropertiesPropertySource;
 import java.util.*;
 
 public class XtimersCustomerServer {
+    private static final Logger logger = LoggerFactory.getLogger(XtimersCustomerServer.class);
 
     static {
         if (System.getProperty("logging.config") == null) {
+            System.out.println("System.getProperty(logging.config)>>> " + System.getProperty("logging.config"));
             System.setProperty("logging.config", "classpath:xtimers-customer-server-logback.xml");
         }
     }

@@ -1,0 +1,4 @@
+logging:
+  config: classpath:xtimers-customer-server-logback.xml
+  file:
+    name: logssss/xtimers-customer-server.log
